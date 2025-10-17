@@ -3174,6 +3174,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 767px) {
   .header-left {
+    padding-left: 10%;
     margin-bottom: 10px;
     margin-top: 44px;
   }
@@ -3188,7 +3189,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 767px) {
   .header-left h1 {
-    margin-top: 28px;
+    margin-top: -2px;
   }
 }
 
@@ -3201,7 +3202,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 991px) {
   .header-left h1 {
-    font-size: 26px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-left h1 span {
+    font-size: 40px;
   }
 }
 
@@ -3213,11 +3220,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 767px) {
-  .header-left a {
-    margin-top: 24px;
+  .header-left p {
+    font-size: 16px;
   }
 }
 
+@media (max-width: 767px) {
+  .header-left a {
+    margin-top: -2px;
+  }
+}
 
 .header-left .vdo-section img {
   cursor: pointer;
@@ -3235,7 +3247,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 768px) {
   .header-left .image-box {
     position: absolute;
-    top: -22px;
+    top: -16px;
     right: 38px;
     display: inline-block;
     flex: 0 0 55px;
@@ -3266,9 +3278,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   .header-left .image-box2 {
     position: absolute;
     bottom: -132px;
-    left: 54px;
+    left: 44px;
     display: inline-block;
     flex: 0 0 55px;
+    z-index: 99;
   }
 }
 
@@ -3295,9 +3308,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 768px) {
   .header-left .image-box3 {
     position: absolute;
-    bottom: 38px;
+    bottom: -278px;
     right: 64px;
     display: inline-block;
+    z-index: 99;
     flex: 0 0 55px;
   }
 }
@@ -3313,7 +3327,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: rotateY(360deg);
 }
 
-
 .header-left .image-box4 {
   position: absolute;
   top: -14px;
@@ -3325,8 +3338,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 768px) {
   .header-left .image-box4 {
     position: absolute;
-    top: 124px;
-    right: 1px;
+    top: 204px;
+    left: 262px;
     display: inline-block;
     flex: 0 0 55px;
   }
@@ -3410,7 +3423,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   letter-spacing: 0.75px;
   font-weight: 400;
   line-height: 1.25;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 576px) {
@@ -3446,6 +3459,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 768px) {
   .collection-box {
+    background: #fff;
+    padding: 18px 22px 72px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    position: relative;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+@media (max-width: 768px) {
+  .collection-box {
     margin-left: 20px;
     margin-bottom: 18px;
     border: 1px solid transparent;
@@ -3458,7 +3486,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .collection-box h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-family: "Nunito";
   font-weight: 700;
   letter-spacing: 1.4;
@@ -3467,7 +3495,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .collection-box i {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
@@ -4736,6 +4764,43 @@ tbody td.active {
   width: 2rem;
   height: auto;
 }
+
+#scrollUp,
+#back-top {
+    background: #1b9911;
+    height: 60px;
+    width: 60px;
+    right: 31px;
+    bottom: 15px;
+    position: fixed;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    z-index: 9999;
+    box-shadow: 0 3px 6px 3px rgba(27, 153, 17, 0.2);
+}
+
+@media (max-width: 575px) {
+    #scrollUp,
+    #back-top {
+        right: 16px;
+    }
+}
+
+#scrollUp a i,
+#back-top a i {
+    display: block;
+    line-height: 50px;
+    bottom: 100px;
+}
+
+#scrollUp:hover {
+    color: rgb(255, 255, 255);
+}
+
 
 
 /*# sourceMappingURL=main.css.map */
