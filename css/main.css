@@ -3268,7 +3268,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .header-left .image-box2 {
   position: absolute;
-  bottom: -232px;
+  bottom: -162px;
   right: 124px;
   display: inline-block;
   flex: 0 0 55px;
@@ -3299,10 +3299,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .header-left .image-box3 {
   position: absolute;
-  bottom: -12px;
-  right: -154px;
+  top: -62px;
+  right: -54px;
   display: inline-block;
   flex: 0 0 55px;
+  z-index: 99;
 }
 
 @media (max-width: 768px) {
@@ -3699,7 +3700,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*============ End Blog Single Styles  =============*/
 .footer-area {
-  background-color: #2a441a;
+  background-color: #142708;
 }
 
 h6 {
@@ -3720,6 +3721,33 @@ h6 {
   color: #ffffff;
 }
 
+.footer-social a {
+  padding-right: 25px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-social a:hover i {
+  color: #61c524;
+}
+
+.footer-social i {
+  color: #cccccc;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 991.98px) {
+  .footer-social {
+    text-align: left;
+  }
+}
+
+
 .footer-text {
   padding-top: 20px;
   margin-bottom: 0;
@@ -3735,6 +3763,23 @@ h6 {
 .footer-text i:hover {
   color: #1d5e21;
 }
+
+.footer-text {
+  padding-top: 20px;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+.footer-text a,
+.footer-text i {
+  color: #7cb558;
+}
+
+.footer-text a:hover,
+.footer-text i:hover {
+  color: #1d5e21;
+}
+
 
 .address_bar {
   display: inline-block;
