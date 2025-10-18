@@ -66,6 +66,10 @@
   font-weight: 300;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #777777;
   font-family: "Nunito";
